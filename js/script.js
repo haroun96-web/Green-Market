@@ -5,7 +5,9 @@ const productName = document.getElementById("product-name");
 // 2. Définir les produits
 const products = {
     fruits: ["Apple", "Banana", "Strawberry"],
-    vegetables: ["Carrot", "Spinach", "Tomato"]
+    vegetables: ["Carrot", "Spinach", "Tomato"],
+    Homemade Items: ["Organic Honey", "Olive Oil", "Homemade Bread"]
+    Eco Products: ["Reusable Bag", "Wooden Cutlery Set", "Bamboo Toothbrush"]
 };
 
 // 3. Quand on change le type
