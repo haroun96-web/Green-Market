@@ -1,18 +1,18 @@
-// 1. Récupérer les select
+// 1. الحصول على عناصر select
 const productType = document.getElementById("product-type");
 const productName = document.getElementById("product-name");
 
-// 2. Définir les produits
+// 2. تعريف المنتجات
 const products = {
     fruits: ["Apple", "Banana", "Strawberry"],
     vegetables: ["Carrot", "Spinach", "Tomato"],
-    Homemade Items: ["Organic Honey", "Olive Oil", "Homemade Bread"]
-    Eco Products: ["Reusable Bag", "Wooden Cutlery Set", "Bamboo Toothbrush"]
+    homemade: ["Organic Honey", "Olive Oil", "Homemade Bread"],
+    eco: ["Reusable Bag", "Wooden Cutlery Set", "Bamboo Toothbrush"]
 };
 
-// 3. Quand on change le type
+// 3. عند تغيير نوع المنتج
 productType.addEventListener("change", function() {
-    // Vider le select des produits
+    // تفريغ قائمة المنتجات القديمة
     productName.innerHTML = '<option value="">-- Select a product --</option>';
     
     const type = this.value;
@@ -20,8 +20,8 @@ productType.addEventListener("change", function() {
     if(type && products[type]){
         products[type].forEach(function(item){
             const option = document.createElement("option");
-            option.value = item.toLowerCase(); // valeur en minuscule
-            option.text = item; // texte affiché
+            option.value = item.toLowerCase(); // قيمة صغيرة للحقل
+            option.text = item; // النص المعروض
             productName.appendChild(option);
         });
     }
