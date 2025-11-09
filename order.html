@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form – Green Market</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Place an Order</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="how.html">How We Grow</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <label for="fullname">Your Name:</label><br>
+            <input type="text" name="fullname" id="fullname" placeholder="Your name" required> <br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" placeholder="you@example.com" required><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="number" name="phone" id="phone" placeholder="+213 666 666 666" required><br>
+
+            <label for="product-type">Products Type:</label><br>
+            <select name="product-type" id="product-type" required>
+                <option value="">-- Select a type --</option>
+                <option value="fruits">Fruits 🍎</option>
+                <option value="vegetables">Vegetables 🥕</option>
+                <option value="homemade">Homemade Items 🍯</option>
+                <option value="eco">Eco Products 🌱</option>
+            </select><br>
+
+            <label for="product-name">Product Name:</label><br>
+            <select name="product-name" id="product-name" required>
+                <option value="">-- Select a product --</option>
+            </select><br>
+
+            <label for="quantity">Quantity/</label><br>
+            <input type="number" name="quantity" id="quantity" placeholder="Enter quantity" min="1" required><br>
+
+            <label for="address">Delivery Address:</label><br>
+            <textarea name="address" id="address" placeholder="Street, city, postal code" cols="30" rows="10" required></textarea>
+
+            <button type="submit">Place Order</button>
+        </form>
+        <script src="js/script.js"></script>
+    </main>
+
+
+
+    <footer>
+        <p>Contact us: 
+            <a href="contact@greenmarket.com">info@gis-tech.dz</a>| 📞 +213 770 123 456
+        </p> 
+        <p>Follow us: 
+            <a href="#">Facebook</a> 
+            <a href="#">Instagram</a> 
+            <a href="#">YouTube</a> 
+        </p>
+        <p>
+            &copy; 2025 Gis-Tech. All rights reserved.
+        </p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
